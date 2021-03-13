@@ -1,0 +1,278 @@
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 3px gray;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #2196f3;
+    border-radius: 8px;
+    &:hover{
+        background: #1d74bb;
+    }
+}
+
+
+
+.FullPage__Container{
+    width: 100%;
+    display: flex;
+}
+.SideBar__Container{
+    width: 260px;
+    height: 100vh;
+    background-image: linear-gradient(#020024, #090469);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    text-align: center;
+    position: fixed !important;
+    z-index: 10;
+}
+.close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 220px;
+    margin-top: 10px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+}
+.PersonalImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.PersonName{
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.FrontEndDeveloper{
+    @extend .PersonName;
+    padding-bottom: 50px;
+    margin-top: 15px;
+}
+.birthOfDate{
+    color: rgb(192, 192, 192);
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: center;
+}
+.Address{
+    @extend .birthOfDate;
+}
+.MobileNumber{
+    @extend .birthOfDate;
+    &:hover{
+        color: rgb(151, 0, 156);
+    }
+}
+.EmailAddress{
+    @extend .birthOfDate;
+    padding-bottom: 20px;
+    &:hover{
+        color: rgb(151, 0, 156);
+    }
+}
+.MainContent__Container{
+    width: calc(100% - 260px);
+    background-color: #e3eaf3;
+    margin-left: 260px;
+}
+.SelectLang{
+    position: absolute;
+    display: flex;
+    width: calc(100% - 260px);
+    justify-content: flex-end;
+    a{
+        background-color: rgb(214, 214, 214);
+        border: rgb(214, 214, 214) 1px solid;
+        color: white;
+        width: 40px;
+        height: 20px;
+        margin: 1px;
+        display: flex;justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .geo{
+        margin-right: 10px;
+        margin-top: 5px !important;
+    }
+    .en{
+        margin-top: 5px !important;
+    }
+}
+.bar{
+    position: absolute;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+}
+.Title{
+    text-align: center;
+    font-size: 49px;
+    font-weight: bold;
+    padding-bottom: 35px;
+    color: rgb(0, 0, 41);
+    letter-spacing: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+.AboutMe__title{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(0, 0, 41);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.AboutMe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+    .description{
+        width: calc(50% - 35px);
+        line-height: 20px;
+        font-size: 18px;
+        color: rgb(0, 0, 41);
+        text-align: center;
+    }
+    .programmerImage{
+        width: 300px;
+    }
+}
+.experanceCarousel__container{
+    width: 100%;
+    background-color: white;
+    height: 250px;
+}
+.experianceCarousel{
+    width: 94%;
+    margin: auto;
+    overflow: hidden;
+}
+.experiance{
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    width: 2000px;
+    align-items: center;
+    li{
+        height: 134px;
+        width: 134px;
+        img{
+            height: 134px;
+            width: 134px;
+        }
+    }
+}
+.prev{
+    font-size: 30px;
+    width: 50px;
+    color: white;
+    background-color: rgb(230, 0, 0);
+    border: rgb(230, 0, 0);
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.4;
+    margin-left: 20px;
+    &:hover{
+        box-shadow: 0px 0px 15px 8px rgb(230, 0, 0);
+        transform: scale(1.6);
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.8s;
+    }
+}
+.next{
+    @extend .prev;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+.buttons{
+    width: calc(100% - 260px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+}
+.ProjectsTitle{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.Projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 80px !important;
+    li{
+        width: 45%;
+        margin-top: 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+}
+.hover{
+    border-radius: 8px;
+    position: absolute;
+    width: 180px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: rgb(3, 3, 51);
+    opacity: 0.8;
+    visibility: hidden;
+    a{
+        color: white;
+        font-weight: bold;
+    }
+}
+.ContactTitle{
+    @extend .ProjectsTitle;
+}
+.SocialNetworks{
+    display: flex;
+    margin-top: 45px;
+    margin-left: 50px;
+    li{
+        margin: 0px 15px;
+        font-size: 70px;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        a{
+            color: rgb(5, 5, 88);
+        }
+    }
+}

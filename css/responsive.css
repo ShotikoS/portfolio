@@ -1,0 +1,65 @@
+@media (max-width: 900px) {
+  .SideBar__Container {
+    display: none;
+    position: absolute;
+  }
+  .close {
+    visibility: visible;
+  }
+  .MainContent__Container {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .MobileNumber {
+    height: 90px;
+  }
+  .Address {
+    margin-bottom: 20px;
+  }
+  .bar {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 620px) {
+  .Title {
+    font-size: 22px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  .AboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .programmerImage {
+    margin-top: 30px;
+  }
+  .description {
+    margin: auto;
+    width: calc(100% - 35px) !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .Projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Projects li {
+    width: 80%;
+  }
+  .SocialNetworks {
+    margin-left: 0px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
